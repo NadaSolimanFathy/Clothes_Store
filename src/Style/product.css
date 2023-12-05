@@ -1,0 +1,11 @@
+#prod_img {
+  height: 70%;
+  width: 100%;
+}
+
+
+
+.card {
+  height: 620px;
+  border: 1px solid green;
+}

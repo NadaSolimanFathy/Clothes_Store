@@ -1,0 +1,9 @@
+#mySec img {
+  height: 100%s;
+}
+
+#mySec .card {
+  margin: auto;
+  width: 350px;
+  height: 500px;
+}
