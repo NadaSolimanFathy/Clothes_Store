@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
 import Product from "./Product";
 
 import "../Style/ProductDetails.css";
 
 function ProductDetails() {
   const params = useParams();
+  const Category = params.btnRoute;
   const API_URL = `https://fakestoreapi.com/products/${params.prodId}`;
   const [productData, setProductData] = useState({});
 
@@ -20,7 +21,7 @@ function ProductDetails() {
       <h1>
         Product {params.prodId} : {productData.title} ,,,details
       </h1>
-      <Product product={productData} showButton={false} />
+      <Product product={productData} showButton={false} Category={Category} />
     </section>
   );
 }
